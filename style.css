@@ -1,0 +1,166 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+body {
+  height: 1000px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav.navbar {
+  transition: 0.5s;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
+  background-color: transparent;
+  transition: 0.5s;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+  color: white;
+  font-weight: bold;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+  color: #0B346E;
+}
+
+header.jumbotron {
+  text-align: center;
+  background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123097/病毒_bkfs96.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+header.jumbotron .container {
+  color: white;
+  padding: 200px 0px;
+}
+header.jumbotron h1 {
+  color: rgba(252, 250, 242, 0.9);
+  font-size: 72px;
+  letter-spacing: 5px;
+}
+header.jumbotron hr {
+  max-width: 50px;
+  border: solid 3px #4FA7B2;
+}
+header.jumbotron h4 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+section {
+  padding: 50px 0px;
+}
+
+section#section_ask {
+  background-color: #78c2c4;
+  color: white;
+}
+section#section_ask .col-sm-5.img {
+  background-image: url(http://media.istockphoto.com/photos/cancer-cell-picture-id466332001?k=6&m=466332001&s=612x612&w=0&h=x2s3-oGDALIfVIPSG5yi8-VBxYIoSPpVpKN1K8kAaaM=);
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  mix-blend-mode: multiply;
+}
+section#section_ask h2 {
+  margin-top: 125px;
+  margin-left: 10%;
+  padding: 0px 20px;
+}
+
+section#section_about {
+  color: #0B346E;
+}
+section#section_about img {
+  width: 100%;
+  border-radius: 5px;
+}
+section#section_about .img_wrap {
+  height: 195px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+section#section_about p {
+  margin-top: 10px;
+}
+
+section#section_selection {
+  background-color: rgba(79, 167, 178, 0.8);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+section#section_selection .col-sm-5 {
+  margin-top: 30px;
+  background-image: url(https://www.newsmax.com/CMSPages/GetFile.aspx?guid=079bfe0e-1946-46f2-8390-5825d97ac486&SiteName=Newsmax);
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+}
+section#section_selection .col-sm-12.choose {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section#section_selection h2, section#section_selection h4 {
+  text-align: center;
+}
+section#section_selection h2 .img_wrap, section#section_selection h4 .img_wrap {
+  margin-top: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+section#section_selection p {
+  font-size: 15px;
+}
+
+section#section_future {
+  margin-top: 0;
+}
+section#section_future img {
+  width: 100%;
+}
+section#section_future i {
+  margin-top: 10px;
+  font-size: 30px;
+  padding: 0;
+}
+section#section_future h2 {
+  padding: 0px 10px;
+}
+section#section_future p {
+  font-size: 15px;
+}
+
+footer.jumbotron {
+  text-align: center;
+  background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123097/病毒_bkfs96.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+footer.jumbotron input {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  text-align: center;
+}
+footer.jumbotron .container {
+  color: white;
+  padding: 50px 0px;
+}
+footer.jumbotron h2 {
+  letter-spacing: 2px;
+}
+footer.jumbotron hr {
+  max-width: 50px;
+  border: solid 3px #4FA7B2;
+}
