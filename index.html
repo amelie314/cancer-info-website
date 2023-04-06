@@ -2,134 +2,86 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - project5-cancer</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
+  <meta name="viewport"> 
+  <title>Application</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans'><link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/79935f2418.js" crossorigin="anonymous"></script>
+  <body>
 <!-- partial:index.partial.html -->
-<!--最上層一欄-->
-<nav class="navbar navbar-default navbar-fixed-top navbar-top">
-  <div class="container">
-    <div class="navbar-header"><a class="navbar-brand">DRUG</a></div>
-    <div class="navbar-collapse collapse">
-      <div class="nav navbar-nav navbar-right">
-        <li><a href="#section_ask">引言 INTRO</a></li>
-        <li><a href="#section_about">簡介 ABOUT</a></li>
-        <li><a href="#section_selection">藥物選擇 SELECTION</a></li>
-        <li><a href="#section_future">新藥展望 FUTURE</a></li>
-      </div>
+<div class="application">
+  <div class="top">
+    <h1>WeHelp申請書</h1>
+    <div class="intro"></div>
+    <div class="buttons">
+      <a class="btn1" href="https://codepen.io/AmelieChen/" target="_blank">作品集</a>
+      <a class="btn2" href="https://github.com/amelie314" target="_blank">Github</a>
+      <a class="btn3" href="https://www.facebook.com/huihua.chen.142" target="_blank">Facebook</a>
     </div>
-  </div>
-</nav>
-<!--窺探腫瘤的大小事   -->
-<header class="jumbotron">
-  <div class="container">
-    <h1 data-0="transform:translateY(-50px)" data-500="transform:translateY(100px)"> 窺探腫瘤的大小事</h1>
     <hr/>
-    <h4>知己知彼，百戰百勝</h4>
+    <h3>1. 兩百字內的個人簡介。</h3>
+    <p>您好，我是陳慧樺。畢業於臺北醫學大學，曾擔任約四年的社區藥局藥師，於這段工作時間培養良好的溝通能力與團隊合作經驗。</p>
+    <li>積極參與防疫政策 (領口罩與快篩)</li>
+    <li>入選公司衛教教案供內部訓練所用。過程中也鍛鍊了快速學習、獨立思考的能力。</li>
+    <p>喜好追求新知與閱讀，在「口罩地圖」的開源專案中看見不同的可能性! 也對職涯產生了不同的想像。利用休假時間，透過線上課程自學HTML和CSS技能，也在這過程中得到了成就感。期待精進技能完成想做的side project，並在生涯中透過不同方式貢獻於社會。</p>
   </div>
-</header>
-<!--關於腫瘤的疑問-->
-<section id="section_ask">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 img" data-0="transform: translateX(-200px)" data-500="transform: translateY(0px)"></div>
-      <div class="col-sm-7" data-300="opacity: 0" data-500="opacity: 1">
-        <h2>若腫瘤細胞量暴增，<br>癌症還有救嗎？</h2>
-      </div>
+  <hr/>
+  <div>
+    <h3>2. 為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</h3>
+    <h4 class="second">嘗試透過線上課程自學、老師實體授課的模式雙管齊下</h4>
+    <div class="lessonList">
+      <ul>
+        <li>
+          <h4>Hahow線上課程<i class="fa-solid fa-keyboard" style="color: #ffd43b;"></i></h4>
+          <p>動畫互動網頁程式入門</p>
+          <a href="https://amelie314.github.io/cancer-info-website/">專案連結</a>
+        </li>
+        <li>
+          <h4>六角學院線上課程<i class="fa-solid fa-keyboard" style="color: #ffd43b;"></i></h4>
+          <p>JavaScript必修篇</p>
+          <a href="https://amelie314.github.io/chatbot/">專案連結</a>
+        </li>
+        <li>
+          <h4>臺大資訊班實體課程<i class="fa-solid fa-school" style="color: #ffd43b;"></i></h4>
+          <p>JavaScript網頁前端工程入門</p>
+          <a href="https://amelie314.github.io/open-data/">專案連結</a>
+        </li>
+      </ul>
     </div>
-  </div>
-</section>
-<!--腫瘤小教室-->
-<section id="section_about">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12" data-bottom-top="transform:translateY(-70px);opacity:0" data-center="transform:translateY(0px);opacity:1">
-        <h2>腫瘤小教室</h2>
-        <hr/>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="img_wrap" data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1"><img src="http://img.technews.tw/wp-content/uploads/2016/04/shutterstock_394138078-624x416.jpg"/></div>
-        <h4>腫瘤的偵測 (Tumor Detection)</h4>
-        <p data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1">目前癌症偵測技術仍十分有限，必須等到癌細胞成長到一定程度才偵測得到，而當達到1立方公分3以上，癌細胞成長速度相當快，這也是造成目前癌症死亡率高的部份原因，故對於腫瘤治療，部分研究是針對「如何更早偵測到癌細胞」為主要方向。</p>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="img_wrap" data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1"><img id="3pic" src="http://c2.thejournal.ie/media/2013/08/brain-9-752x501.jpg" alt=""/></div>
-        <h4>腫瘤的轉移 (Tumor Metastasis)</h4>
-        <p data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1">傳統上，對於癌症轉移的觀念，都認為在腫瘤後期才出現。近年來的研究認為，大部分的癌症細胞在原發部位發生初期，就已經存在所謂「轉移性表現型」，換言之，遠處轉移可能發生在癌症形成的早期階段。癌症轉移有以下3條途徑，即淋巴轉移、血行轉移和種植性轉移。</p>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="img_wrap" data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1"><img src="https://findtreatment.gov/assets/images/resources.jpg" alt=""/></div>
-        <h4>治療(Treatment for Cancer)</h4>
-        <p data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1">治療方式的選擇取決於腫瘤的位置、惡性程度、發展程度以及病人身體狀態，一些實驗性治療癌症的方法也在發展當中。目前對於癌症治療方法的尋找，均是基於徹底清除癌細胞而不損害到其他的細胞的想法。</p>
-      </div>
+  </div> 
+  <hr/> 
+    <div>
+    <h3>3. 如果參與這個計畫，會怎麼安排學習時間?</h3>
+    <p>全職投入以確保有足夠的心力及時間完成課程。
+    <li>設定每週的學習目標、學習時間表、預期完成時間等。</li>
+    <li>建立平日寫程式的習慣，會盡力遵循其課程與專案進度。</li>
+    <li>利用每周末的時間加強練習所學的知識和技能並嘗試產出小作品。</li>
+    </p>  
     </div>
-  </div>
-</section>
-<!--藥物選擇-->
-<section id="section_selection">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-5" data-bottom-top="background-size:140%; background-position:0% 0%;" data-center="background-size:120%; background-position:50% 50%;"> </div>
-      <div class="col-sm-7">
-        <div class="col-sm-12">
-          <h2>抗腫瘤藥物的選擇</h2>
-          <hr/>
-        </div>
-        <div class="col-sm-12 choose">
-          <div class="col-sm-4" data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1"> 
-            <div class="img_wrap"><img src="https://image.flaticon.com/icons/svg/393/393015.svg" alt=""/></div>
-            <h4 data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1"> 化療藥物</h4>
-          </div>
-          <div class="col-sm-4" data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1"> 
-            <div class="img_wrap"><img src="https://image.flaticon.com/icons/svg/212/212317.svg" alt=""/></div>
-            <h4 data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1"> 標靶藥物</h4>
-          </div>
-          <div class="col-sm-4" data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1"> 
-            <div class="img_wrap"><img src="https://image.flaticon.com/icons/svg/212/212322.svg" alt=""/></div>
-            <h4 data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1"> 免疫療法</h4>
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <p>治癌之目標則可分為治癒癌症、延長生命、減輕痛苦及安寧療護四大類。當醫師首次診斷一位癌症病患時﹐首先會依據病理切片之結果決定治療之目標為何﹐下一步是與相關科之醫師及有關醫療工作人員會商以決定治療之方向，並開始治療與定期追蹤治療效果。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--新藥發展-->
-<section id="section_future">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>新藥發展</h2>
-        <hr/>
-      </div>
-      <div class="col-sm-6"><img src="https://s.yimg.com/ny/api/res/1.2/18PTgkqe97FDTUj7E24S7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/ko/moneydj.tw/4a64d7dd8122ecb2a3ff9e439b5f9636" alt=""/></div>
-      <div class="col-sm-6" data-bottom-top="transform:translateX(50px)" data-center="transform:translateX(0px)"><i class="fa fa-flask"></i>
-        <h3>發展方向</h3>
-        <p>目前全球約有700個新藥進入臨床研究，其中70多個進入臨床Ⅲ期試驗，估計今年不少於40個新藥可能獲得批准。其中，抗癌藥占有較大比例。</p><i class="fa fa-bullseye"> </i>
-        <h3>未來目標</h3>
-        <p>FDA局長在「醫療創新發展計劃」中，陳述了全新審評抗癌藥「遊戲規則」，強調以「致癌基因」為靶標的抗癌藥審評新方案。</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!---->
-<footer class="jumbotron">
-  <div class="container">
-    <h2>得知更多癌症藥物的資訊？</h2>
-    <input class="form-control" placeholder="Email"/>
     <hr/>
-    <button class="btn btn-default">訂閱故事</button>
-  </div>
-</footer>
+    <div>
+    <h3>4. 是否有想要加入的軟體公司？為什麼想加入該公司？</h3>
+    <p>有，像是：</p>  
+    <li>均一教育平台，</li>
+  </div>   
+    <hr>
+    <div>
+    <h3>5. 請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？</h3>
+    <p>在自學的過程中，偶爾會感到焦慮，尤其是當進度落後於預期時。由於缺乏實體同學間的互動和交流，也擔心自己是否能夠有效地學習和掌握新的技術。
+      為了處理這些負面情緒，我嘗試採取以下行動：</p>
+    <li>與朋友建立連結，通過線上討論(如:slack)來增進互動和交流。
+    <li>使用生產力工具輔助，例如分配學習時間和集中注意力，減輕焦慮感。</li>
+    <p>透過這些方法處理負面情緒，保持學習的動能。</p>
+    </div>
+    <hr>          
+
+       
+    <div>
+    <h3>6. 關於這份申請網頁，請分享一個你開發時的技術心得。</h3>
+    </div>
+    <div>
+    <h3>7. 其他想要對我們說的事情？</h3>
+    </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/js/mdb.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script><script  src="./script.js"></script>
-
 </body>
 </html>
